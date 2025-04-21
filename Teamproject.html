@@ -21,8 +21,6 @@
   </nav>
 
 
-  <!-- 박스 이미지와 설명 -->
-    팀프로젝트 완성시 위코드를 제거후 링크입력력
   <div class="box-container">
     <a href="https://webteam-sepia.vercel.app/usage.html" target="_blank" class="box-item">
       <img src="teamproject.jpeg" alt="팀프로젝트" />
@@ -31,6 +29,19 @@
       </p>
     </a>
   </div>
+  <div class="code-box">
+    <h3>주요 코드 설명</h3>
+    <pre><code>
+  &lt;button onclick="openImage()"&gt;이미지 보기&lt;/button&gt;
+  
+  function openImage() {
+    const img = document.createElement('img');
+    img.src = 'images/example.jpg';
+    document.body.appendChild(img);
+  }
+    </code></pre>
+  </div>
+  
   <footer class="footer">
     <div class="container">
       <h2>ⓒ 웹프로그래밍 중간과제. 정호준.</h2>
