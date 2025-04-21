@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>웹프로그래밍</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- 메뉴 -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">HTML</div>
+        <ul class="nav">
+          <li><a href="/">Home</a></li>
+          <li><a href="Secon.html">Secon</a></li>
+          <li><a href="Teamproject.html">Teamproject</a></li>
+          <li><a href="Project.html">project</a></li>
+          <li><a href="about.html">about</a></li>
+        </ul>
+      </div>
+    </nav>
+  
+
+    <!-- 메인 섹션 -->
+    <section class="main">
+      <div class="container">
+        <h1>웹프로그래밍. Web Programming....</h1>
+        <h2>중부대학교 정보보호학과 정호준</h2>
+
+        <!-- 메인 섹션과 다른 클레스 지정정 -->
+        <div class="custom-info-box">
+          <h3>웹 개발자를 위한 온라인 매뉴얼:</h3>
+          <a href="https://www.w3schools.com/" target="_blank" class="manual-link">w3schools.com</a>
+
+          <p>
+            웹프로그래밍의 3가지 요소:<br />
+            <a href="https://www.w3schools.com/html/default.asp" target="_blank" class="info-link">HTML5</a> |
+            <a href="https://www.w3schools.com/css/default.asp" target="_blank" class="info-link">CSS3</a> |
+            <a href="https://www.w3schools.com/js/default.asp" target="_blank" class="info-link">JavaScript</a>
+          </p>
+
+          <p>현재시간: <span id="time"></span></p>
+
+          <hr />
+
+          <p>
+            배경색 바꾸기:
+            <button onclick="pink()" class="color-button">Pink</button>
+            <button onclick="lightblue()" class="color-button">Lightblue</button>
+            <button onclick="yellow()" class="color-button">Yellow</button>
+            <button onclick="reset()" class="color-button">Reset</button>
+          </p>
+
+          <hr />
+        </div>
+
+        
+        <h2 class="contact-title">연락처</h2>
+
+        
+        <div class="link-box-container">
+          <a href="https://www.instagram.com/jeonghojun24/?hl=ko" class="link-box" target="_blank">
+            <img src="Instargram.png" alt="Image 1" />
+            <p>인스타그램</p>
+          </a>
+        </div>
+        <h2>메일:hojunj49@naver.com</h2>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <h2>ⓒ 웹프로그래밍 중간과제. 정호준.</h2>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
