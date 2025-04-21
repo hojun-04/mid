@@ -434,29 +434,25 @@ button:hover {
   text-decoration: underline;
 }
 /*팀프로젝트에서 내가 작성한 코드*/
-.code-box {
-  background-color: #1e1e1e;
-  color: #dcdcdc;
-  font-family: 'Courier New', Courier, monospace;
-  padding: 20px;
-  border-radius: 10px;
+.info-box {
+  max-width: 800px;
   margin: 40px auto;
-  max-width: 900px;
-  overflow-x: auto;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  line-height: 1.8;
+  color: #333;
 }
 
-.code-box h3 {
-  color: #ffffff;
+.info-box h3 {
+  font-size: 20px;
   margin-bottom: 15px;
-  font-size: 18px;
-  border-bottom: 1px solid #444;
-  padding-bottom: 5px;
+  color: #111;
 }
 
-.code-box code {
-  white-space: pre-wrap;
-  display: block;
-  font-size: 14px;
-  line-height: 1.6;
+.info-box p {
+  font-size: 16px;
+  margin-bottom: 12px;
 }
+

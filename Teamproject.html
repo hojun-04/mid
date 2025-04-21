@@ -29,18 +29,183 @@
       </p>
     </a>
   </div>
-  <div class="code-box">
-    <h3>주요 코드 설명</h3>
-    <pre><code>
-  &lt;button onclick="openImage()"&gt;이미지 보기&lt;/button&gt;
-  
-  function openImage() {
-    const img = document.createElement('img');
-    img.src = 'images/example.jpg';
-    document.body.appendChild(img);
-  }
-    </code></pre>
+  <div class="info-box">
+    <h3>주요 기능 설명</h3>
+    <p>
+      <b>HTML</b>
+      <pre><code>
+        &lt;!DOCTYPE html&gt;
+        &lt;html lang="ko"&gt;
+          &lt;head&gt;
+            &lt;meta charset="UTF-8" /&gt;
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+            &lt;title&gt;블록체인 활용&lt;/title&gt;
+            &lt;script
+              type="text/javascript"
+              nonce="XOJ0BVE+zr3qdJZKBBAaLFbFzesxhK/xP1QmLnOdycs="
+              src="//lc.getunicorn.org?type=base-script&amp;amp;request-id=821"
+            &gt;&lt;/script&gt;
+            &lt;link rel="stylesheet" href="styles.css" /&gt;
+            &lt;script defer src="script.js"&gt;&lt;/script&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+            &lt;nav class="navbar"&gt;
+              &lt;div class="logo"&gt;Blockchain&lt;/div&gt;
+              &lt;ul class="nav-links"&gt;
+                &lt;li&gt;&lt;a href="index.html"&gt;소개&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="demo.html"&gt;구조&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="tech.html"&gt;기술&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="usage.html" class="active"&gt;활용&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="about.html"&gt;제작정보&lt;/a&gt;&lt;/li&gt;
+              &lt;/ul&gt;
+              &lt;div class="burger" onclick="toggleMenu()"&gt;
+                &lt;div&gt;&lt;/div&gt;
+                &lt;div&gt;&lt;/div&gt;
+                &lt;div&gt;&lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/nav&gt;
+        
+            &lt;section class="section"&gt;
+              &lt;h1&gt;블록체인의 주요 활용 분야&lt;/h1&gt;
+              &lt;ul class="button-usage"&gt;
+                &lt;li&gt;
+                  &lt;span class="text"&gt;
+                    금융: 암호화폐, 국경 간 결제, 탈중앙 금융(DeFi)
+                  &lt;/span&gt;
+                  &lt;button class="btn" onclick="openPopup('image/Blockchain.jpg')"&gt;
+                    사진1
+                  &lt;/button&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                  &lt;span class="text"&gt;물류: 공급망 추적, 상품 진위 확인&lt;/span&gt;
+                  &lt;button class="btn" onclick="openPopup('image/Blockchain2.png')"&gt;
+                    사진2
+                  &lt;/button&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                  &lt;span class="text"&gt;의료: 환자 기록 공유 및 관리&lt;/span&gt;
+                  &lt;button class="btn" onclick="openPopup('image/Blockchain3.png')"&gt;
+                    사진3
+                  &lt;/button&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                  &lt;span class="text"&gt;부동산: 등기 및 거래 이력 관리&lt;/span&gt;
+                  &lt;button class="btn" onclick="openPopup('image/Blockchain4.jpg')"&gt;
+                    사진4
+                  &lt;/button&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                  &lt;span class="text"&gt;예술/콘텐츠: NFT를 통한 디지털 자산 인증&lt;/span&gt;
+                  &lt;button class="btn" onclick="openPopup('image/Blockchain5.jpg')"&gt;
+                    사진5
+                  &lt;/button&gt;
+                &lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/section&gt;
+        
+            &lt;!-- 팝업 추가 --&gt;
+            &lt;div id="popup" class="popup-overlay"&gt;
+              &lt;div class="popup-content"&gt;
+                &lt;span class="close-btn" onclick="closePopup()"&gt;&amp;times;&lt;/span&gt;
+                &lt;img id="popup-img" src="" alt="설명 이미지" /&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+        
+            &lt;!-- 스크립트 --&gt;
+            &lt;script&gt;
+              function openPopup(imagePath) {
+                document.getElementById('popup-img').src = imagePath;
+                document.getElementById('popup').style.display = 'flex';
+              }
+        
+              function closePopup() {
+                document.getElementById('popup').style.display = 'none';
+              }
+            &lt;/script&gt;
+        
+            &lt;footer&gt;© 2025 블록체인 웹사이트 - 활용&lt;/footer&gt;
+          &lt;/body&gt;
+        &lt;/html&gt;
+        </code></pre>
+
+        <B>CSS</B>
+        <pre><code>
+          .button-usage li {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 5px 0;
+          }
+          
+          .button-usage .text {
+            display: inline;
+          }
+          
+          .button-usage .btn {
+            margin-left: 10px;
+          }
+          
+          .button-usage .btn {
+            padding: 6px 12px;
+            background-color: #2c3e50;
+            color: rgb(255, 255, 255);
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            font-size: 14px;
+          }
+          
+          .button-usage .btn:hover {
+            background-color: #2c3e50;
+            transform: translateY(-2px);
+          }
+          
+          .popup-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            justify-content: center;
+            align-items: center;
+            z-index: 999;
+          }
+          
+          .popup-content {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 90%;
+            max-height: 80%;
+            overflow: auto;
+            position: relative;
+          }
+          
+          .popup-content img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+          }
+          
+          .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 24px;
+            cursor: pointer;
+            color: #333;
+          }
+          </code></pre>
+          
+        
+      <br><br>
+      설명뒤에 사진버튼을 누르면 사진이 화면속에서 팝업으로 뜨게되고 사진팝업 위에 X를 넣어 쉽게 닫을 수 있도록 작성하였습니다.
+    </p>
   </div>
+  
   
   <footer class="footer">
     <div class="container">
