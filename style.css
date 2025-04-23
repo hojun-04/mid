@@ -455,3 +455,75 @@ button:hover {
   margin-bottom: 12px;
 }
 
+@media (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .navbar .container {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .project-list {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .project-card {
+    max-width: 100%;
+    min-width: auto;
+    width: 100%;
+  }
+
+  .link-box-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .link-box-container .link-box {
+    max-width: 90%;
+  }
+
+  .box-container {
+    flex-direction: column;
+    padding: 0 15px;
+  }
+
+  .about-boxes {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .about-box-link {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .image-box {
+    margin: 20px 15px;
+  }
+
+  .source-box {
+    padding: 15px;
+    margin: 20px 15px;
+  }
+
+  .info-box {
+    margin: 15px;
+  }
+
+  .footer {
+    font-size: 12px;
+  }
+}
+
